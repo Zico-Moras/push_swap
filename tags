@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = cc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -Werror -Wextra -g$/;"	m
+INT_MAX	push_swap.h	4;"	d
+INT_MIN	push_swap.h	5;"	d
+NAME	Makefile	/^NAME = push_swap$/;"	m
+OBJ	Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+PUSH_SWAP_H	push_swap.h	2;"	d
+RM	Makefile	/^RM = rm -rf$/;"	m
+SRC	Makefile	/^SRC = push_swap.c ft_split.c functions.c utils.c stack_utils.c$/;"	m
+add_to_stack	functions.c	/^void	add_to_stack(int number, t_node **a)$/;"	f
+copy_word	ft_split.c	/^static char	*copy_word(const char *s, char c)$/;"	f	file:
+error_checker	functions.c	/^int	error_checker(long number, t_node **a)$/;"	f
+free_error	functions.c	/^void free_error(t_node **a)$/;"	f
+free_words	ft_split.c	/^static char	**free_words(char **array, int i)$/;"	f	file:
+ft_atol	utils.c	/^long	ft_atol(const char *s)$/;"	f
+ft_count_words	ft_split.c	/^static int	ft_count_words(const char *s, char c)$/;"	f	file:
+ft_isdigit	utils.c	/^static int	ft_isdigit(const char c)$/;"	f	file:
+ft_split	ft_split.c	/^char	**ft_split(const char *s, char c)$/;"	f
+get_firstnode	stack_utils.c	/^t_node	*get_firstnode(t_node *node)$/;"	f
+get_lastnode	stack_utils.c	/^t_node	*get_lastnode(t_node *node)$/;"	f
+main	push_swap.c	/^int	main(int ac, char **av)$/;"	f
+newnode	stack_utils.c	/^t_node	*newnode(int number)$/;"	f
+next	push_swap.h	/^	struct	s_node	*next;$/;"	m	struct:s_node	typeref:struct:s_node::s_node
+number	push_swap.h	/^	int	number;$/;"	m	struct:s_node
+previous	push_swap.h	/^	struct	s_node	*previous;$/;"	m	struct:s_node	typeref:struct:s_node::s_node
+s_node	push_swap.h	/^typedef struct s_node {$/;"	s
+show_nodes	functions.c	/^void	show_nodes(t_node *a)$/;"	f
+stack_init	functions.c	/^void	stack_init(char **holder, t_node **a)$/;"	f
+swap	swap_command.c	/^void	swap(t_node **node)$/;"	f
+t_node	push_swap.h	/^}	t_node;$/;"	t	typeref:struct:s_node
