@@ -55,3 +55,23 @@ int	stack_len(t_node *node)
 	return (i);
 }
 
+t_node	*get_highestnode(t_node *node)
+{
+	int	highest;
+
+	t_node	*highest_node;
+	if (NULL == node)
+		return (NULL);
+	highest = INT_MIN;
+	while (node)
+	{
+		if (node->number > highest)
+		{
+			highest = node->number;
+			highest_node = node;
+		}
+		node = node->next;
+	}
+	return (highest_node);
+}
+

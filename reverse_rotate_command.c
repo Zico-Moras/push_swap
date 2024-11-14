@@ -16,21 +16,24 @@ static void	reverse_rotate(t_node **node)
 	(*node)->next->previous = *node;
 }
 
-void	rra(t_node **a)
+void	rra(t_node **a, int checker)
 {
 	reverse_rotate(a);
-	write(1, "rra\n", 4);
+	if (!checker)
+		write(1, "rra\n", 4);
 }
 
-void	rrb(t_node **b)
+void	rrb(t_node **b, int checker)
 {
 	reverse_rotate(b);
-	write(1, "rrb\n", 4);
+	if (!checker)
+		write(1, "rrb\n", 4);
 }
 
-void	rrr(t_node **a, t_node **b)
+void	rrr(t_node **a, t_node **b, int checker)
 {
 	reverse_rotate(a);
 	reverse_rotate(b);
-	write(1, "rrr\n", 4);
+	if (!checker)
+		write(1, "rrr\n", 4);
 }

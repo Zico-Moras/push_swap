@@ -12,7 +12,7 @@ void	show_nodes(t_node *a)
 	}
 
 }
-void free_error(t_node **a)
+void free_nodes(t_node **a)
 {
     t_node *current = get_firstnode(*a);
     t_node *next_node;
@@ -74,8 +74,8 @@ void	stack_init(char **holder, t_node **a)
 		number = ft_atol(holder[i++]);
 		if (error_checker(number, a))
 		{
-			free_error(a);
-			write(STDERR_FILENO, "Error\n", 6);
+			free_nodes(a);
+			error();
 		}
 		else
 			add_to_stack((int)number, a);

@@ -28,36 +28,15 @@
 */
 int	main(int ac, char **av)
 {
-	char	**holder;
 	t_node	*a;
-	//t_node	*b;
 
-	int	i;
-	a = NULL;
-	//b = NULL;
+	a = parse(ac, av);
 
-	if (1 == ac || !av[1][0])
-		write(2, "Error\n", 6);
-	else if (2 == ac)
-	{
-		holder = ft_split(av[1], ' ');
-		stack_init(holder, &a);
-	}
+	if (!is_sorted(a))
+		sort(&a); // CONTINUAR 
 
-
-
-
-	ra(&a);
-	ra(&a);
 	show_nodes(a);
-	free_error(&a);
-	i = 0;
-	while (holder[i])
-	{
-		free(holder[i]);
-		i++;
-	}
-	free(holder);
+	free_nodes(&a);
 	//printf("%ld", sizeof(t_node));
 
 }

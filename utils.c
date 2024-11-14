@@ -28,3 +28,9 @@ long	ft_atol(const char *s)
 	}
 	return (number * sign);
 }
+
+void	error()
+{
+	write(STDERR_FILENO, "Error\n", 6);
+	exit(1);
+}

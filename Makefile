@@ -6,6 +6,7 @@ NAME = push_swap
 
 SRC = push_swap.c ft_split.c functions.c utils.c stack_utils.c \
       swap_command.c push_command.c rotate_command.c reverse_rotate_command.c \
+      parse.c algorithm.c
 
 OBJ = $(SRC:.c=.o)
 
